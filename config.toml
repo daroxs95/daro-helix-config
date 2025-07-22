@@ -37,7 +37,7 @@ newline = "none"
 display-inlay-hints = true
 
 [keys.normal]
-B = ":sh smerge blame %{buffer_path}"
+B = ":sh smerge blame %{buffer_name}"
 # [keys.insert]
 # # --- utility ----
 # "C-s" = ":w"                 # quick-save
