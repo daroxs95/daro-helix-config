@@ -1,0 +1,69 @@
+theme = "monokai_aqua"
+
+[editor]
+color-modes=true
+true-color=true
+cursorline=true
+undercurl=true
+bufferline="multiple"
+rulers=[80]
+
+[editor.indent-guides]
+render=true
+
+[editor.cursor-shape]
+insert="bar"
+normal="block"
+select="underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name", "read-only-indicator", "file-modification-indicator"]
+center = ["diagnostics"]
+right = ["selections", "register", "position", "file-encoding"]
+
+[editor.file-picker]
+hidden = false
+"ignore" = true
+"git-ignore" = true
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+nbsp = "all"
+nnbsp = "all"
+newline = "none"
+
+[editor.lsp]
+display-inlay-hints = true
+
+[keys.normal]
+B = ":sh smerge blame %{buffer_path}"
+# [keys.insert]
+# # --- utility ----
+# "C-s" = ":w"                 # quick-save
+# "C-a" = "goto_line_start"    # Home
+# "C-e" = "goto_line_end"      # End
+
+# # --- word motion (Ctrl + Arrow) ---
+# "C-left"  = "move_prev_word_start"
+# "C-right" = "move_next_word_start"
+# "C-up"   = "move_line_up"
+# "C-down" = "move_line_down"
+
+# # --- shift-selection like a GUI editor ---
+# "S-left"  = "extend_char_left"
+# "S-right" = "extend_char_right"
+# "S-up"    = "extend_visual_line_up"
+# "S-down"  = "extend_visual_line_down"
+
+# # optional: select whole words with Ctrl + Shift + Arrow
+# "C-S-left"  = "extend_prev_word_start"
+# "C-S-right" = "extend_next_word_start"
+
+# "C-z"     = ["commit_undo_checkpoint", "undo"]     # make a checkpoint, then undo
+# "C-S-z"   = ["commit_undo_checkpoint", "redo"]
+
+# "C-c"     = "clipboard-yank"
+# "C-v"     = "clipboard-paste-after"
+
+# backspace = "delete_selection"
