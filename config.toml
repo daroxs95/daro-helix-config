@@ -34,10 +34,14 @@ nnbsp = "all"
 newline = "none"
 
 [editor.lsp]
-display-inlay-hints = true
+display-inlay-hints = false
 
 [keys.normal]
 B = ":sh smerge blame %{buffer_name}"
+
+[keys.normal.space]
+i = ":toggle lsp.display-inlay-hints"
+
 # [keys.insert]
 # # --- utility ----
 # "C-s" = ":w"                 # quick-save
