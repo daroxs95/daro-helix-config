@@ -1,13 +1,3 @@
-[[language]] 
-name = "env" 
-scope = "source.env" 
-file-types = [".env", ".env.local", ".env.development", ".env.production", ".env.dist", ".envrc"] 
-injection-regex = "env" 
-comment-token = "#" 
-indent = { tab-width = 4, unit = "\t" } 
-roots = []
-grammar = "bash" 
-
 [[language]]
 name = "javascript"
 formatter = { command = 'prettier', args = ["--parser", "typescript"] }
